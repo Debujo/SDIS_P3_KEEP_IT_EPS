@@ -6,7 +6,7 @@ export const state = () => ({
 
 export const mutations = {
     add(state, item) {
-        state.items.push({item})
+        state.items.push(item)
     },
     remove(state, item) {
         state.items.splice(state.item.indexOf(item), 1)

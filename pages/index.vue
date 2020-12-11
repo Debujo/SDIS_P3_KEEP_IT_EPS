@@ -2,8 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <div class="text-center">
-        <logo />
-        <v-img :src = "require ('~/assets/newlogo.png')" />
+        <v-img :src = "require ('~/assets/newlogo.png')"   max-height="500" max-width="500"/>
       </div>
       <v-card>
         <v-card-title class="h1">

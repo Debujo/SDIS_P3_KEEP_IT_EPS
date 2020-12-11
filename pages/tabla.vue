@@ -9,6 +9,7 @@
       <v-sheet color="rgba(0, 0, 0, .12)">
         <v-sparkline
           :value="value"
+          :items="items"
           color="rgba(255, 255, 255, .7)"
           height="100"
           padding="24"
