@@ -14,10 +14,7 @@ import Formulario from '~/components/Formulario'
 import { mapActions, mapState } from 'vuex'
 export default {
   components: { Formulario },
-  data: () => ({
-    //categ: ['comida', 'viajes', 'ocio'],
-    //items: []
-  }),
+  data: () => ({}),
   methods: {
     ...mapActions('safe', ['add'])
   },
@@ -27,7 +24,7 @@ export default {
           const result = []
           let cat = 0
           this.categ.forEach(x => {
-              cat = x.cantegoria
+              cat = x.categoria
               result.push(cat)
           })
           return result

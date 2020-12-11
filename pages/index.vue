@@ -26,7 +26,7 @@
             nuxt
             to="/formulario"
           >
-            GET STARTED
+            GO!
           </v-btn>
         </v-card-actions>
       </v-card>

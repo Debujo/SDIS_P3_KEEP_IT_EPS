@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="mx-auto text-center"
-    color="grey"
+    color="green"
     dark
     max-width="600"
   >
@@ -29,8 +29,17 @@
       </div>
     </v-card-text>
 
+    <v-card-actions class="justify-center">
+      <v-btn
+        block
+        to="/formulario"
+        text
+      >
+        Introduce más datos
+      </v-btn>
+    </v-card-actions>
     <v-divider></v-divider>
-  </v-card>
+  </v-card> 
 </template>
 
 <script>
@@ -49,8 +58,13 @@ export default {
           const result = []
           let saldo = 0
           this.ordenados.forEach(x => {
-              saldo = saldo - x.cantidad
-              result.push(saldo)
+              if (x.categoria == 'Ingresos'){
+                saldo = saldo + x.cantidad
+                result.push(saldo)
+              }else{
+                saldo = saldo - x.cantidad
+                result.push(saldo)
+              }
           })
           return result
       },

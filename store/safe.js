@@ -1,6 +1,6 @@
 export const state = () => ({
     items: [],
-    categ: ['comida', 'viajes', 'ocio'],
+    categ: ['Ingresos', 'Comida', 'Ocio', 'Facturas', 'Alquiler/Hipoteca', 'Viajes', 'Telefonía'],
     initialize: false 
 })
 
