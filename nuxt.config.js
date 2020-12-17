@@ -6,6 +6,9 @@ export default {
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+  router: {
+    base: '/http://Debujo.github.io/SDIS_P3_KEEP_IT_EPS/'
+  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
