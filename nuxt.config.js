@@ -20,7 +20,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/SDIS_P3_KEEP_IT_EPS/favicon.ico' }
     ]
   },
 
@@ -39,6 +39,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/pwa'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -46,9 +47,6 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
-  pwa: {
-    icon: false // disables the icon module
-  },
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
